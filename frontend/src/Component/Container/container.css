@@ -1,0 +1,179 @@
+.img-option{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 10%;
+}
+.Side-options{
+    display: flex;
+    padding: 0.35rem  0.55rem;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+.Side-options:hover {
+    cursor: pointer;
+    background-color: rgb(231, 229, 229);
+    padding: 0.35rem  0.55rem;
+    border-radius: 5%;
+   margin-top: 0.2rem;
+   
+}
+.create-spaces{
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    background-color: rgb(231, 229, 229);
+    padding: 0.35rem  0.55rem;
+    border-radius: 5%;
+}
+.spaces-name{
+    color: #8e8e90;
+}
+
+.circle-icon{
+    height: 0.1rem;
+    width: 0.1rem;
+    padding: 0.5rem 0;
+    color: #b1b3b5;
+}
+
+/* styling for search bar component */
+.search-box{
+    border: 1.5px solid var(--grey);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    padding: 0.48rem 0.48rem;
+    background-color: white;
+}
+.user-icon{
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: rgb(198, 197, 197);
+    border-radius: 50%;
+    align-items: center;
+    padding: 0.4rem
+}
+.search-and-userIcon-div{
+    display: flex;
+    gap: 0.8rem;
+}
+.ask-answer-post-div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.3rem;
+  
+}
+.send-post{
+    color: #838384;
+    font-weight: 300;
+    align-items: center;
+    border-right: 2px solid #838384;
+    padding:  0 3.22rem;
+}
+/* styling for feed post */
+/* .feed-box{ */
+    /* border: 2px solid black; */
+    /* padding: 0.5rem; */
+    /* margin: 0.2rem; */
+    /* background-color: white; */
+/* } */
+
+.post-box{
+    border: 1.5px solid var(--grey);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    padding: 0.48rem 0.48rem;
+    background-color: white;
+}
+.post-footer {
+    justify-content: space-between;
+}
+
+/* right bar styling */
+.advertisement{
+    border: 1px solid #8e8e90;
+    padding: 0.4rem;
+    background-color: white;
+    width: 20rem;
+}
+
+
+/* styling for add question popup */
+
+.addQuestion-footer{
+   margin-top: 14.95rem;
+    bottom: 0 auto;
+   text-align: right;
+}
+
+/* styling for quill */
+.quill{
+    height: 18.5rem;
+}
+
+/* styling for shimmer */
+
+/* shimmer animmattion */
+.loader{
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: linear-gradient(to right , #f6f6f6 8% , #f0f0f0 18% , #f6f6f6);
+
+    border: 1.5px solid #ddd;
+    margin-top: 1.5rem ;
+    
+    width: 14rem;
+    padding: 0.4rem;
+}
+.shimmer-div{
+    display: block;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+}
+.shimmer-value{
+    border: 0.5px solid rgb(244, 241, 241);
+
+    margin-top:  1.5rem;
+    padding: 0.7rem;
+    background: rgba(188, 188, 188, 0.416);
+   
+}
+.loader-img{
+    border-radius: 5px;
+    padding: 2.7rem;
+
+}
+@keyframes shimmer {
+    0% {background-position: -500px 0;}
+    100% {background-position: 500px 0 ;}
+}
+
+@media only screen and  (max-width : 768px) {
+    /* .left-container{
+      display: none;
+    }  */
+    .post-box{
+        padding: 0;
+        margin: 0.2rem;
+        display: block;
+        flex-wrap: wrap;
+        /* width: fit-content; */
+    }
+    /* .advertisement{
+        display: none;
+    } */
+    .send-post{
+        font-weight: 200;
+        font-size: 0.67rem;
+       padding:  0 0.4rem;
+    }
+  }
+
+  @media only screen and (max-width : 420px){
+    .left-container , .advertisement{
+        display: none;
+    }
+    .quill{
+        height: 9rem;
+    }
+  }

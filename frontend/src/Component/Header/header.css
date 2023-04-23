@@ -1,0 +1,78 @@
+:root{
+    --grey : #ddd;
+    --black : #000;
+    --white : #ffffff;
+    --font-grey : #717171;
+    --theme : #b92b27;
+    --light-grey : #f7f7f7;
+  }
+
+.logo{
+    width: 7rem;
+    height: 3rem;
+    color: var(--theme);
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: 'Lobster Two', cursive;
+}
+.header-bar{
+  padding: 0 -5rem !important ;
+  border: 1.5px solid var(--grey);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+}
+.navbar{
+  padding: 0 1rem
+}
+.container{
+  max-width: 69rem;
+}
+.nav-link{
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+/* styling for modal */
+.main-modal-div{
+  width: 33rem;
+  height: 30rem;
+}
+.modal-opt{
+  padding: 0.4rem;
+}
+.modal-opt:hover{
+  padding: 0.4rem;
+  background-color: #ddd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1040px) {
+  .navbar > div{
+
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+   display: block;
+   border-bottom: 0.2px solid grey;
+   /* min-width: fit-content; */
+  }
+  .nav-link{
+    margin-right: 0;
+    padding: 0.5rem;
+    
+  }
+}
+
+@media only screen and  (max-width : 768px) {
+  .try-quora , .globe{
+    display: none;
+  } 
+
+}
+
+@media only screen and (max-width : 560px) {
+  .main-modal-div{
+    width: 100%;
+    height: 20rem;
+  }
+}
